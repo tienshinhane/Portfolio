@@ -1,14 +1,19 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hi I'm Ruutonny and I like React.</p>
-        Learn React: done [✓]
-      </header>
-    </div>
+    <>
+      <Header />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   );
 }
 
