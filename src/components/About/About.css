@@ -1,5 +1,8 @@
 .About-header {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: url(../../assets/about_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,4 +10,30 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: 282c34;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  /* background-color: grey; */
+}
+
+.right {
+  right: 0;
+  /* background-color: whitesmoke; */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

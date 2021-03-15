@@ -1,9 +1,12 @@
 .Home {
   text-align: center;
+  background-image: url(../../assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Home-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
