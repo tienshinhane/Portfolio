@@ -1,10 +1,262 @@
-.Projects-header {
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+/*
+Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricing-table-templates/
+*/
+
+.Projects-container {
   background-color: #282c34;
   min-height: 100vh;
+}
+
+.Projects-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Projects-container > h2 {
+  color: white;
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 2px #558abb;
+  font-weight: bold;
+}
+
+.Horizontal {
+  box-shadow: 0 0 8px 6px rgba(104, 190, 255, 0.16);
+  height: 1px;
+  position: relative;
+  border: 0;
+  width: 70rem;
+  background: #336699;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/*----------WEBSITES----------*/
+
+.Websites-container > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 2px #558abb;
+}
+
+.music .entry-title {
+  background-image: url(../../assets/images/projectheaders/edgespearmusic.png);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: -100px;
+}
+
+.music .logo {
+  background-image: url(../../assets/images/angularlogo.png) !important;
+  border: 5px solid #c00707 !important;
+}
+
+.portfolio .entry-title {
+  background-image: url(../../assets/images/projectheaders/edgespearprojects.png);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: -60px;
+}
+
+.portfolio .logo {
+  background-image: url(../../assets/images/reactlogo.png) !important;
+  border: 5px solid #61dafb !important;
+}
+
+/*----------GAMES----------*/
+
+.Games-container > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 2px #558abb;
+}
+
+.my-projects {
+  text-align: center;
+}
+
+.project {
+  display: inline-block;
+  margin: 10px 1%;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.project-inner {
+  background: #525a69;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 100%;
+  position: relative;
+  border-radius: 2%;
+}
+
+.entry-title {
+  height: 140px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 30px;
+  background-image: url(../../assets/images/projectheaders/androidproject1.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.entry-title > h3 {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 120%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.entry-title .logo {
+  position: absolute;
+  bottom: -25px;
+  background-image: url(../../assets/images/unitylogo.png);
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 5px solid #000000;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.price span {
+  position: absolute;
+  font-size: 9px;
+  bottom: -10px;
+  left: 30px;
+  font-weight: 400;
+}
+
+.entry-content {
+  color: whitesmoke;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.entry-content li {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+}
+
+.entry-content li > a {
+  text-decoration: none;
+}
+
+.entry-content li:last-child {
+  border: none;
+}
+
+.btn-table {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.btn {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.btn a:hover {
+  background: #777777;
+}
+
+.btn a {
+  background: #323232;
+  margin-right: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: grey !important;
+}
+
+.hot {
+  position: absolute;
+  top: -7px;
+  background: #f80;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 2;
+  padding: 2px 5px;
+  font-size: 9px;
+  border-radius: 2px;
+  right: 10px;
+  font-weight: 700;
+}
+.burger .entry-title {
+  background-image: url(../../assets/images/projectheaders/bugergame.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.blackjack .entry-title {
+  background-image: url(../../assets/images/projectheaders/blackjack.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.breakout .entry-title {
+  background-image: url(../../assets/images/projectheaders/breakout.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.bumper .entry-title {
+  background-image: url(../../assets/images/projectheaders/bumperball.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+/*----------APPS----------*/
+
+.Apps-container > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 2px #558abb;
+}
+
+.dog .entry-title {
+  background-image: url(../../assets/images/projectheaders/dogproject.png);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: -5px;
+}
+
+.dog .logo {
+  background-image: url(../../assets/images/ioniclogo.png);
+  border: 5px solid #4e8ef7;
 }
