@@ -4,8 +4,12 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 */
 
 .Projects-container {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: url(/src/assets/projectbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
+  padding-top: 1.5rem;
 }
 
 .Projects-main {
@@ -18,7 +22,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 
 .Projects-container > h2 {
   color: #ffffff;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   font-size: 2.5rem;
   display: flex;
   align-items: center;
@@ -26,6 +30,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   text-shadow: 1px 2px #7e3bbc;
   font-weight: bold;
   padding-bottom: 1rem;
+  background-color: rgba(224, 224, 224, 0.123);
 }
 
 .Horizontal {
@@ -88,6 +93,8 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   text-align: center;
 }
 
+/* The project */
+
 .project {
   display: inline-block;
   margin: 10px 1%;
@@ -100,8 +107,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   min-width: 280px;
   max-width: 100%;
   position: relative;
-  border-radius: 2%;
-  margin-bottom: 1rem;
+  border-radius: 1%;
 }
 
 .entry-title {
@@ -181,7 +187,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 }
 
 .btn {
-  padding: 3em 0;
+  padding: 3rem 0;
   text-align: center;
 }
 

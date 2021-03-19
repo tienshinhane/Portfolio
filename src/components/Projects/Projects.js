@@ -5,6 +5,7 @@ const Projects = () => {
   return (
     <div id="projects" className="Projects-container">
       <h2>Projects</h2>
+      <div className="divider-darkbg"></div>
       <div className="Projects-main">
         <div className="Websites-container">
           <h2>Websites</h2>
@@ -80,11 +81,12 @@ const Projects = () => {
                 <div className="btn-table">
                   <div className="btn">
                     <a
+                      className="not-active"
                       href="http://edgespearprojects.com"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Visit
+                      You're Here!
                     </a>
                     <a href="/">Info</a>
                   </div>
@@ -94,6 +96,7 @@ const Projects = () => {
           </div>
           {/* {<!-- end of Portfolio project tab-->} */}
         </div>
+        <div className="divider-dot-darkbg"></div>
         <div className="Games-container">
           <h2>Games</h2>
           <div className="Horizontal"></div>
@@ -339,6 +342,7 @@ const Projects = () => {
             {/* <!--end of Breakout project tab-- > */}
           </div>
         </div>
+        <div className="divider-dot-darkbg"></div>
         <div className="Apps-container">
           <h2>Apps</h2>
           <div className="Horizontal"></div>
@@ -359,7 +363,7 @@ const Projects = () => {
                       <strong>Languages: </strong>HTML, CSS, TS, JS, SQL
                     </li>
                     <li>
-                      <strong>Platforms: </strong>Mobile
+                      <strong>Platforms: </strong>Mobile/Web
                     </li>
                     <li>
                       <strong>Status: </strong>Work In Progress
@@ -371,7 +375,9 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a href="/">Download</a>
+                    <a href="/" className="not-active">
+                      Download
+                    </a>
                   </div>
                   <div className="btn">
                     <a href="/">Info</a>
@@ -382,6 +388,7 @@ const Projects = () => {
             {/* {<!-- end of Dog project tab-->} */}
           </div>
         </div>
+        <div className="divider-dot-darkbg"></div>
       </div>
     </div>
   );

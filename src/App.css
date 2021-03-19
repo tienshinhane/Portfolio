@@ -1,0 +1,40 @@
+.divider-lightbg {
+  background-image: url(assets/dividerlight.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.divider-darkbg {
+  background-image: url(assets/dividerdark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+}
+
+.divider-dot-lightbg {
+  background-image: url(assets/dividerlight2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+}
+
+.divider-dot-darkbg {
+  background-image: url(assets/dividerdark2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+}
