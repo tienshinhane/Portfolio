@@ -17,24 +17,24 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 }
 
 .Projects-container > h2 {
-  color: white;
-  padding-top: 2rem;
+  color: #ffffff;
+  padding-top: 1.5rem;
   font-size: 2.5rem;
-  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 1px 2px #558abb;
+  text-shadow: 1px 2px #7e3bbc;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .Horizontal {
-  box-shadow: 0 0 8px 6px rgba(104, 190, 255, 0.16);
+  box-shadow: 0 0 8px 6px #bb72ff33;
   height: 1px;
   position: relative;
   border: 0;
   width: 70rem;
-  background: #336699;
+  background: #7e3bbc;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -46,7 +46,8 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 1px 2px #558abb;
+  text-shadow: 1px 2px #7e3bbc;
+  margin-top: 1rem;
 }
 
 .music .entry-title {
@@ -79,7 +80,8 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 1px 2px #558abb;
+  text-shadow: 1px 2px #7e3bbc;
+  margin-top: 1rem;
 }
 
 .my-projects {
@@ -99,6 +101,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   max-width: 100%;
   position: relative;
   border-radius: 2%;
+  margin-bottom: 1rem;
 }
 
 .entry-title {
@@ -246,7 +249,8 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 1px 2px #558abb;
+  text-shadow: 1px 2px #7e3bbc;
+  margin-top: 1rem;
 }
 
 .dog .entry-title {

@@ -33,9 +33,18 @@
   transition: 0.5s;
   text-decoration: none;
 }
+
 .Nav a:hover {
   transform: scale(1.1);
 }
+
+.Nav > .active {
+  color: #7e3bbc;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0 0 1px #b776f3;
+}
+
 .Nav button {
   padding: 10px;
   outline: none;
@@ -53,6 +62,7 @@
 .Nav button:active {
   transform: translateY(3px);
   box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+  color: aqua;
 }
 
 .Burger {

@@ -8,16 +8,44 @@ const Header = () => {
     <div className="Header">
       <img src={logo} className="Logo" alt="logo"></img>
       <nav className="Nav">
-        <Link smooth={true} to="home" href="#">
+        <Link
+          smooth={true}
+          activeClass="active"
+          spy={true}
+          to="home"
+          offset={-70}
+          href="#"
+        >
           Home
         </Link>
-        <Link smooth={true} to="about" offset={-70} href="#">
+        <Link
+          smooth={true}
+          activeClass="active"
+          spy={true}
+          to="about"
+          offset={-70}
+          href="#"
+        >
           About Me
         </Link>
-        <Link smooth={true} to="projects" offset={-70} href="#">
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          to="projects"
+          offset={-70}
+          href="#"
+        >
           Projects
         </Link>
-        <Link smooth={true} to="contact" offset={-70} href="#">
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          to="contact"
+          offset={-70}
+          href="#"
+        >
           Contact Me
         </Link>
       </nav>

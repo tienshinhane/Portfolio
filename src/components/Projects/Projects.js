@@ -373,6 +373,9 @@ const Projects = () => {
                   <div className="btn">
                     <a href="/">Download</a>
                   </div>
+                  <div className="btn">
+                    <a href="/">Info</a>
+                  </div>
                 </div>
               </div>
             </div>
