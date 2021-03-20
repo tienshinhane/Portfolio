@@ -46,7 +46,6 @@ const About = () => {
               <li>C#</li>
               <li>Java</li>
               <li>SQL (MySQL)</li>
-              <li>PHP</li>
               <li>React</li>
               <li>Angular 7+</li>
               <li>Ionic</li>

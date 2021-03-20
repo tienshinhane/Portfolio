@@ -65,8 +65,8 @@
 /*Inputs styles*/
 .montform .feedback-input:focus {
   background: #fff;
-  border: 3px solid #3498db;
-  color: #3498db;
+  border: 3px solid #7e3bbc;
+  color: #7e3bbc;
   outline: none;
   padding: 13px 13px 13px 54px;
 }
@@ -101,6 +101,13 @@
   background-repeat: no-repeat;
 }
 
+.montform #subject {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/icons/question-square-fill.svg);
+  background-size: 25px 25px;
+  background-position: 14px 11px;
+  background-repeat: no-repeat;
+}
+
 .montform #comment {
   background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
   background-size: 30px 30px;
@@ -126,7 +133,7 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   float: left;
   width: 100%;
-  border: #fbfbfb solid 4px;
+  border: #fbfbfb solid 2px;
   cursor: pointer;
   background-color: #7e3bbc;
   color: white;
@@ -140,16 +147,16 @@
 
 .button-blue:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #0493bd;
+  color: #7e3bbc;
 }
 
 .montform .submit:hover {
-  color: #3498db;
+  color: #7e3bbc;
 }
 
 .ease {
   width: 0px;
-  height: 74px;
+  height: 70px;
   background-color: #fbfbfb;
   transition: 0.3s ease;
 }
@@ -163,6 +170,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: -20px;
 }
 
 /*Styles for small screens*/

@@ -7,6 +7,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-container">
       <h2>Contact Me</h2>
+      <div className="divider-lightbg"></div>
       <div className="container">
         <div id="form-main">
           <div id="form-div">
@@ -31,6 +32,16 @@ const Contact = () => {
                   placeholder="Email"
                 />
               </p>
+              <p className="subject">
+                <input
+                  name="subject"
+                  type="text"
+                  required
+                  className="feedback-input"
+                  id="subject"
+                  placeholder="Subject"
+                />
+              </p>
               <p className="text">
                 <textarea
                   name="message"
@@ -41,12 +52,12 @@ const Contact = () => {
               </p>
               <div className="submit">
                 <button type="submit" className="button-blue">
-                  SUBMIT
+                  Submit
                 </button>
                 <div className="ease"></div>
               </div>
             </form>
-            <div
+            {/* <div
               id="error_message"
               // style="width:100%; height:100%; display:none;"
             >
@@ -59,7 +70,7 @@ const Contact = () => {
             >
               {" "}
               <h2>Success! Your Message was Sent Successfully.</h2>{" "}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
