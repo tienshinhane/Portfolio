@@ -1,5 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Projects.css";
+// REACT POPUPBOX
+import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import "react-popupbox/dist/react-popupbox.css";
 
 const Projects = () => {
   return (
@@ -129,11 +132,7 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a
-                      href="../../assets/WebGL/androidproject/index.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href="/" target="_blank" rel="noreferrer">
                       Play
                     </a>
                     <a href="/">Info</a>

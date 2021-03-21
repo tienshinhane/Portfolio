@@ -69,3 +69,7 @@ ul {
 .centered > h3 {
   margin-bottom: 2rem;
 }
+
+.languages > ul > li {
+  font-size: 1.5rem;
+}

@@ -1,3 +1,9 @@
+.unity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .divider-lightbg {
   background-image: url(assets/dividerlight.png);
   background-repeat: no-repeat;

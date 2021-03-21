@@ -34,10 +34,10 @@ const About = () => {
         </div>
         <div className="divider-lightbg"></div>
         <div className="centered">
-          <h3>
+          <h4>
             Studying with the Open University alongside my own personal projects
             and research has given me varied experience with the following:
-          </h3>
+          </h4>
           <div className="languages">
             <ul>
               <li>HTML5</li>
@@ -49,6 +49,9 @@ const About = () => {
               <li>React</li>
               <li>Angular 7+</li>
               <li>Ionic</li>
+              <li>Adobe Photoshop</li>
+              <li>Unity</li>
+              <li>Blender</li>
             </ul>
           </div>
         </div>
