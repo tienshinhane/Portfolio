@@ -270,3 +270,23 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   background-image: url(../../assets/images/ioniclogo.png);
   border: 5px solid #4e8ef7;
 }
+
+/*-------Popup Box-------*/
+.portfolio-image-popupbox {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.info-text {
+  margin-top: 10px;
+  max-height: 250px;
+  max-width: 100%;
+  font-size: large;
+  overflow: auto;
+}
+
+.info-text > h3 {
+  text-align: center;
+  text-decoration: underline;
+}
