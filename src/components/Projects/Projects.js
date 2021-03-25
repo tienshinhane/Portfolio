@@ -1,151 +1,74 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Projects.css";
-
-import androidprojectbanner from "../../assets/images/projectheaders/androidproject1.png";
-import edgespearmusicbanner from "../../assets/images/projectheaders/edgespearmusic.png";
-
+import React, { useState, useEffect } from "react";
 // React Popup Box
-import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import { PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
+import {
+  openPopupboxPlayAndroid,
+  openPopupboxPlayBumperBall,
+  openPopupboxPlayBlackjack,
+  openPopupboxPlayBurgerMania,
+  openPopupboxPlayBreakout,
+} from "./PlayContent.js";
+import {
+  openPopupboxMusicInfo,
+  openPopupboxAndroidInfo,
+  openPopupboxBumperInfo,
+  openPopupboxBlackjackInfo,
+  openPopupboxBurgerInfo,
+  openPopupboxBreakoutInfo,
+  openPopupboxPortfolioInfo,
+  openPopupboxDogInfo,
+} from "./Content.js";
+
 const Projects = () => {
-  //#region Websites
-  const openPopupboxMusicInfo = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={edgespearmusicbanner}
-          alt="edge spear music Banner"
-        />
-        <div class="info-text">
-          <h3>edgespearMusic.com</h3>
-          <p>
-            edgespearMusic.com was created as a way to showcase my music
-            projects to potential clients, much in the same way that this
-            website is intended to showcase some of my programming projects.
-          </p>
+  const [count, setCount] = useState(0);
 
-          <p>
-            It was created by myself and a friend who turned me onto the Angular
-            framework and served as an excellent starting point for me to begin
-            learning how to build modern, responsive, component-based websites.
-            I continue to explore what Angular has to offer, as is shown by this
-            website you are currently visiting.
-          </p>
+  useEffect(() => {
+    if (count === -1) {
+      openPopupboxPlayAndroid();
+    }
+    if (count === -2) {
+      openPopupboxPlayBumperBall();
+    }
+    if (count === -3) {
+      openPopupboxPlayBlackjack();
+    }
+    if (count === -4) {
+      openPopupboxPlayBurgerMania();
+    }
+    if (count === -5) {
+      openPopupboxPlayBreakout();
+    }
+    if (count === 1) {
+      openPopupboxMusicInfo();
+    }
+    if (count === 2) {
+      openPopupboxPortfolioInfo();
+    }
+    if (count === 3) {
+      openPopupboxAndroidInfo();
+    }
+    if (count === 4) {
+      openPopupboxBumperInfo();
+    }
+    if (count === 5) {
+      openPopupboxBlackjackInfo();
+    }
+    if (count === 6) {
+      openPopupboxBurgerInfo();
+    }
+    if (count === 7) {
+      openPopupboxBreakoutInfo();
+    }
+    if (count === 8) {
+      openPopupboxDogInfo();
+    }
+    setCount(0);
+  });
 
-          <p>
-            The source code is unavailable due to privacy regarding my
-            professional published projects and my clients' projects.
-          </p>
-        </div>
-      </>
-    );
-    PopupboxManager.open({
-      content,
-      config: {
-        titleBar: {
-          enable: true,
-          text: "edgespearMusic.com",
-        },
-        fadeIn: true,
-        fadeInSpeed: 500,
-      },
-    });
-  };
-
-  const popupboxConfigedgespearmusic = {
-    titleBar: {
-      enable: true,
-      text: "edgespearmusic.com",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-  //#endregion
-
-  //#region Games
-  // Android Info
-  const openPopupboxAndroidInfo = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={androidprojectbanner}
-          alt="Untitled Android Project Banner"
-        />
-        <div class="info-text">
-          <h3>Untitled Android Project</h3>
-          <p>
-            My most recent project, as yet untitled, takes inspiration from the
-            original Pokemon games on the GameBoy and combines a key feature
-            from one of the original Harry Potter games, namely the
-            drawing/tracing of shapes on the screen.
-          </p>
-
-          <p>
-            The demo is currently playable but is extremely limited. I intend to
-            expand into a full wizarding-world that allows players to collect
-            and use spells in turn-based combat, as well as customise their own
-            character. This game is not intended to be multiplayer but will be
-            the first project of mine to feature a storyline.
-          </p>
-
-          <h3>
-            <strong>About The Build</strong>
-          </h3>
-
-          <p>There are only two scenes: Main Game and Battle Scene.</p>
-
-          <p>
-            The Main Game features 'portable game device' controls for mobile,
-            dialogue functionality, an 'automatic movement' system over the
-            small bridge and a pocket-monster-style battle initiation with the
-            enemy to the right of the main bridge.
-          </p>
-
-          <p>
-            The Battle Scene features a duel system; The enemy chooses a spell,
-            the player chooses a spell, both attempt to trace the spell as
-            accurately as possible, damage/health is calculated relevant to the
-            accuracy of the trace. Rinse and repeat until a winner is declared.
-          </p>
-
-          <p>
-            The drawing system is the most complex part of the game so far,
-            using an idea and code snippet from
-            <a href="http://theflyingkeyboard.net/unity/unity-2d-c-drawing-lines-with-mouse/">
-              theflyingkeyboard
-            </a>
-            to have different line objects connected together and coloured
-            either red or green depending on whether or not they're within a
-            boundary
-          </p>
-        </div>
-      </>
-    );
-    PopupboxManager.open({
-      content,
-      config: {
-        titleBar: {
-          enable: true,
-          text: "Untitled Android Project",
-        },
-        fadeIn: true,
-        fadeInSpeed: 500,
-      },
-    });
-  };
-
-  const popupboxConfigAndroid = {
-    titleBar: {
-      enable: true,
-      text: "Untitled Android Project",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-  //#endregion
   return (
     <div id="projects" className="Projects-container">
       <h2>Projects</h2>
@@ -190,7 +113,7 @@ const Projects = () => {
                     >
                       Visit
                     </a>
-                    <a onClick={openPopupboxMusicInfo}>Info</a>
+                    <a onClick={() => setCount(1)}>Info</a>
                   </div>
                 </div>
               </div>
@@ -232,7 +155,7 @@ const Projects = () => {
                     >
                       You're Here!
                     </a>
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(2)}>Info</a>
                   </div>
                 </div>
               </div>
@@ -273,10 +196,8 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a href="/" target="_blank" rel="noreferrer">
-                      Play
-                    </a>
-                    <a onClick={openPopupboxAndroidInfo}>Info</a>
+                    <a onClick={() => setCount(-1)}>Play</a>
+                    <a onClick={() => setCount(3)}>Info</a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -316,7 +237,7 @@ const Projects = () => {
                     <a href="/" className="not-active">
                       Play
                     </a>
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(4)}>Info</a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -361,14 +282,8 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a
-                      href="../../assets/WebGL/blackjack/index.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Play
-                    </a>
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(-3)}>Play</a>
+                    <a onClick={() => setCount(5)}>Info</a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -413,14 +328,8 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a
-                      href="../../assets/WebGL/bugermania/index.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Play
-                    </a>
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(-4)}>Play</a>
+                    <a onClick={() => setCount(6)}>Info</a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -465,13 +374,8 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a
-                      href="../../assets/WebGL/breakout/index.html"
-                      target="_blank"
-                    >
-                      Play
-                    </a>
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(-5)}>Play</a>
+                    <a onClick={() => setCount(7)}>Info</a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -520,7 +424,7 @@ const Projects = () => {
                     </a>
                   </div>
                   <div className="btn">
-                    <a href="/">Info</a>
+                    <a onClick={() => setCount(8)}>Info</a>
                   </div>
                 </div>
               </div>
@@ -531,7 +435,6 @@ const Projects = () => {
         <div className="divider-dot-darkbg"></div>
       </div>
       <PopupboxContainer />
-      {/* <PopupboxContainer {...popupboxConfigAndroid} /> */}
     </div>
   );
 };

@@ -49,7 +49,7 @@ const About = () => {
               <li>React</li>
               <li>Angular 7+</li>
               <li>Ionic</li>
-              <li>Adobe Photoshop</li>
+              <li>Adobe Photoshop, XD</li>
               <li>Unity</li>
               <li>Blender</li>
             </ul>
