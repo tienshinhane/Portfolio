@@ -6,7 +6,7 @@ import Unity, { UnityContent } from "react-unity-webgl";
 
 //Untitled Android Project
 export const openPopupboxPlayAndroid = () => {
-  let unityContent = new UnityContent(
+  let myUnityContent = new UnityContent(
     "androidproject/Build/WebGL.json",
     "androidproject/Build/UnityLoader.js"
   );
@@ -14,10 +14,14 @@ export const openPopupboxPlayAndroid = () => {
   const content = (
     <>
       <div className="unity-container">
-        <Unity unityContent={unityContent} />
+        <Unity unityContent={myUnityContent} />
       </div>
+      <button onClick={() => console.log("Clicked")}>Remove!</button>
     </>
   );
+
+  window.myUnityContent = myUnityContent;
+
   PopupboxManager.open({
     content,
     config: {
@@ -29,6 +33,10 @@ export const openPopupboxPlayAndroid = () => {
       fadeInSpeed: 500,
     },
   });
+
+  PopupboxManager.config.onCleanUp = () => {
+    myUnityContent.remove();
+  };
 };
 
 //Bumper Ball
@@ -36,7 +44,7 @@ export const openPopupboxPlayBumperBall = () => {};
 
 //Blackjack
 export const openPopupboxPlayBlackjack = () => {
-  let unityContent = new UnityContent(
+  let myUnityContent = new UnityContent(
     "blackjack/Build/Builds.json",
     "blackjack/Build/UnityLoader.js"
   );
@@ -44,7 +52,7 @@ export const openPopupboxPlayBlackjack = () => {
   const content = (
     <>
       <div className="unity-container">
-        <Unity unityContent={unityContent} />
+        <Unity unityContent={myUnityContent} />
       </div>
     </>
   );
@@ -59,11 +67,15 @@ export const openPopupboxPlayBlackjack = () => {
       fadeInSpeed: 500,
     },
   });
+
+  PopupboxManager.config.onCleanUp = () => {
+    //do something
+  };
 };
 
 //Burger Mania
 export const openPopupboxPlayBurgerMania = () => {
-  let unityContent = new UnityContent(
+  let myUnityContent = new UnityContent(
     "burgermania/Build/WebGL.json",
     "burgermania/Build/UnityLoader.js"
   );
@@ -71,7 +83,7 @@ export const openPopupboxPlayBurgerMania = () => {
   const content = (
     <>
       <div className="unity-container">
-        <Unity unityContent={unityContent} />
+        <Unity unityContent={myUnityContent} />
       </div>
     </>
   );
@@ -86,11 +98,15 @@ export const openPopupboxPlayBurgerMania = () => {
       fadeInSpeed: 500,
     },
   });
+
+  PopupboxManager.config.onCleanUp = () => {
+    //do something
+  };
 };
 
 //Breakout
 export const openPopupboxPlayBreakout = () => {
-  let unityContent = new UnityContent(
+  let myUnityContent = new UnityContent(
     "breakout/Build/WebGL.json",
     "breakout/Build/UnityLoader.js"
   );
@@ -98,7 +114,7 @@ export const openPopupboxPlayBreakout = () => {
   const content = (
     <>
       <div className="unity-container">
-        <Unity unityContent={unityContent} />
+        <Unity unityContent={myUnityContent} />
       </div>
     </>
   );
@@ -113,4 +129,8 @@ export const openPopupboxPlayBreakout = () => {
       fadeInSpeed: 500,
     },
   });
+
+  PopupboxManager.config.onCleanUp = () => {
+    //do something
+  };
 };

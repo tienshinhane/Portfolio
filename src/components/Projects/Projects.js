@@ -12,6 +12,7 @@ import {
   openPopupboxPlayBurgerMania,
   openPopupboxPlayBreakout,
 } from "./PlayContent.js";
+
 import {
   openPopupboxMusicInfo,
   openPopupboxAndroidInfo,
@@ -21,53 +22,82 @@ import {
   openPopupboxBreakoutInfo,
   openPopupboxPortfolioInfo,
   openPopupboxDogInfo,
-} from "./Content.js";
+} from "./Content";
+import { Link } from "react-router-dom";
+
+let gamedata = {
+  title: "Untitled Android Game",
+  link1: "androidproject/Build/WebGL.json",
+  link2: "androidproject/Build/UnityLoader.js",
+};
 
 const Projects = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (count === -1) {
+      // openPopupboxPlay(
+      //   "Untitled Android Game",
+      //   "androidproject/Build/WebGL.json",
+      //   "androidproject/Build/UnityLoader.js"
+      // );
       openPopupboxPlayAndroid();
+      setCount(0);
     }
     if (count === -2) {
-      openPopupboxPlayBumperBall();
+      // openPopupboxPlayBumperBall();
+      setCount(0);
     }
     if (count === -3) {
+      // openPopupboxPlay(
+      //   "Blackjack",
+      //   "blackjack/Build/Builds.json",
+      //   "blackjack/Build/UnityLoader.js"
+      // );
       openPopupboxPlayBlackjack();
+      setCount(0);
     }
     if (count === -4) {
-      openPopupboxPlayBurgerMania();
+      // openPopupboxPlayBurgerMania();
+      setCount(0);
     }
     if (count === -5) {
-      openPopupboxPlayBreakout();
+      // openPopupboxPlayBreakout();
+      setCount(0);
     }
     if (count === 1) {
       openPopupboxMusicInfo();
+      setCount(0);
     }
     if (count === 2) {
       openPopupboxPortfolioInfo();
+      setCount(0);
     }
     if (count === 3) {
       openPopupboxAndroidInfo();
+      setCount(0);
     }
     if (count === 4) {
       openPopupboxBumperInfo();
+      setCount(0);
     }
     if (count === 5) {
       openPopupboxBlackjackInfo();
+      setCount(0);
     }
     if (count === 6) {
       openPopupboxBurgerInfo();
+      setCount(0);
     }
     if (count === 7) {
       openPopupboxBreakoutInfo();
+      setCount(0);
     }
     if (count === 8) {
       openPopupboxDogInfo();
+      setCount(0);
     }
-    setCount(0);
-  });
+  }, [count]);
 
   return (
     <div id="projects" className="Projects-container">
@@ -196,7 +226,19 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a onClick={() => setCount(-1)}>Play</a>
+                    <Link
+                      className="play-link"
+                      to={{
+                        pathname: "/GamePage",
+                        state: {
+                          title: "Untitled Android Game",
+                          link1: "androidproject/Build/WebGL.json",
+                          link2: "androidproject/Build/UnityLoader.js",
+                        },
+                      }}
+                    >
+                      Play
+                    </Link>
                     <a onClick={() => setCount(3)}>Info</a>
                     <a href="/" className="not-active">
                       Video

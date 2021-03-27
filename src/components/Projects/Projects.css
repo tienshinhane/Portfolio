@@ -205,6 +205,25 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   text-decoration: none;
 }
 
+.play-link {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.play-link:hover {
+  background: #777777;
+}
+
+.play-link {
+  background: #323232;
+  margin-right: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .not-active {
   pointer-events: none;
   cursor: default;

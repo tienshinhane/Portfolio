@@ -20,7 +20,7 @@ export const openPopupboxMusicInfo = () => {
         src={edgespearmusicbanner}
         alt="edge spear music Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>edgespearMusic.com</h3>
         <p>
           edgespearMusic.com was created as a way to showcase my music projects
@@ -41,6 +41,10 @@ export const openPopupboxMusicInfo = () => {
       fadeInSpeed: 500,
     },
   });
+
+  PopupboxManager.config.onCleanUp = () => {
+    console.log("closing");
+  };
 };
 
 export const openPopupboxPortfolioInfo = () => {
@@ -51,7 +55,7 @@ export const openPopupboxPortfolioInfo = () => {
         src={edgespearprojectsbanner}
         alt="edge spear projects Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>edgespearProjects.com</h3>
         <p></p>
       </div>
@@ -82,7 +86,7 @@ export const openPopupboxAndroidInfo = () => {
         src={androidprojectbanner}
         alt="Untitled Android Project Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>Untitled Android Project</h3>
         <p>
           My most recent project, as yet untitled, takes inspiration from the
@@ -152,7 +156,7 @@ export const openPopupboxBumperInfo = () => {
         src={bumperballbanner}
         alt="Bumper Ball Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>Bumper Ball</h3>
         <p>
           Bumper Ball is inspired by a Crash Bandicoot mini game from 'Crash
@@ -195,7 +199,7 @@ export const openPopupboxBlackjackInfo = () => {
         src={blackjackbanner}
         alt="Blackjack Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>Blackjack</h3>
         <p>A simple blackjack game.</p>
 
@@ -232,7 +236,7 @@ export const openPopupboxBurgerInfo = () => {
         src={burgergamebanner}
         alt="Burger Mania Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>Burger Mania</h3>
         <p>
           A relatively straightforward project, Burger Mania is my take on that
@@ -296,7 +300,7 @@ export const openPopupboxBreakoutInfo = () => {
         src={breakoutbanner}
         alt="Breakout Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>Breakout</h3>
         <p>
           Breakout is a simple brick-breaker-style game with some added
@@ -363,7 +367,7 @@ export const openPopupboxDogInfo = () => {
         src={breakoutbanner}
         alt="Breakout Banner"
       />
-      <div class="info-text">
+      <div className="info-text">
         <h3>K-9 Havok Daycare App</h3>
         <p></p>
       </div>
