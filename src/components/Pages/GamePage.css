@@ -11,7 +11,7 @@
 }
 
 .unity-content {
-  box-shadow: 0px 5px 3px #303030;
+  box-shadow: 5px 5px 3px #303030;
 }
 
 .title {
@@ -20,4 +20,30 @@
   color: black !important;
   padding: 1% !important;
   box-shadow: 0px 5px 3px #303030;
+  text-decoration: underline;
+}
+
+.button-container {
+  margin: auto;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.play-link-game {
+  text-align: center;
+  background: #8a8888 !important;
+  border: 1px solid #303030;
+  border-radius: 10%;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 2px 3px 3px #303030;
+}
+
+.play-link-game:hover {
+  background: #666666 !important;
+  color: rgb(160, 160, 160);
+  text-decoration: none;
 }
