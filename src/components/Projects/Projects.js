@@ -1,17 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Projects.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // React Popup Box
 import { PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
-
-import {
-  openPopupboxPlayAndroid,
-  openPopupboxPlayBumperBall,
-  openPopupboxPlayBlackjack,
-  openPopupboxPlayBurgerMania,
-  openPopupboxPlayBreakout,
-} from "./PlayContent.js";
 
 import {
   openPopupboxMusicInfo,
@@ -23,48 +16,11 @@ import {
   openPopupboxPortfolioInfo,
   openPopupboxDogInfo,
 } from "./Content";
-import { Link } from "react-router-dom";
-
-let gamedata = {
-  title: "Untitled Android Game",
-  link1: "androidproject/Build/WebGL.json",
-  link2: "androidproject/Build/UnityLoader.js",
-};
 
 const Projects = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (count === -1) {
-      // openPopupboxPlay(
-      //   "Untitled Android Game",
-      //   "androidproject/Build/WebGL.json",
-      //   "androidproject/Build/UnityLoader.js"
-      // );
-      openPopupboxPlayAndroid();
-      setCount(0);
-    }
-    if (count === -2) {
-      // openPopupboxPlayBumperBall();
-      setCount(0);
-    }
-    if (count === -3) {
-      // openPopupboxPlay(
-      //   "Blackjack",
-      //   "blackjack/Build/Builds.json",
-      //   "blackjack/Build/UnityLoader.js"
-      // );
-      openPopupboxPlayBlackjack();
-      setCount(0);
-    }
-    if (count === -4) {
-      // openPopupboxPlayBurgerMania();
-      setCount(0);
-    }
-    if (count === -5) {
-      // openPopupboxPlayBreakout();
-      setCount(0);
-    }
     if (count === 1) {
       openPopupboxMusicInfo();
       setCount(0);
@@ -232,7 +188,7 @@ const Projects = () => {
                         pathname: "/GamePage",
                         state: {
                           title: "Untitled Android Game",
-                          link1: "androidproject/Build/WebGL.json",
+                          link1: "androidproject/Build/androidproject.json",
                           link2: "androidproject/Build/UnityLoader.js",
                         },
                       }}
@@ -324,7 +280,19 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a onClick={() => setCount(-3)}>Play</a>
+                    <Link
+                      className="play-link"
+                      to={{
+                        pathname: "/GamePage",
+                        state: {
+                          title: "Blackjack",
+                          link1: "blackjack/Build/Builds.json",
+                          link2: "blackjack/Build/UnityLoader.js",
+                        },
+                      }}
+                    >
+                      Play
+                    </Link>
                     <a onClick={() => setCount(5)}>Info</a>
                     <a href="/" className="not-active">
                       Video
@@ -370,7 +338,19 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a onClick={() => setCount(-4)}>Play</a>
+                    <Link
+                      className="play-link"
+                      to={{
+                        pathname: "/GamePage",
+                        state: {
+                          title: "Burger Mania",
+                          link1: "bugermania/Build/WebGL.json",
+                          link2: "bugermania/Build/UnityLoader.js",
+                        },
+                      }}
+                    >
+                      Play
+                    </Link>
                     <a onClick={() => setCount(6)}>Info</a>
                     <a href="/" className="not-active">
                       Video
@@ -416,7 +396,19 @@ const Projects = () => {
                 </div>
                 <div className="btn-table">
                   <div className="btn">
-                    <a onClick={() => setCount(-5)}>Play</a>
+                    <Link
+                      className="play-link"
+                      to={{
+                        pathname: "/GamePage",
+                        state: {
+                          title: "Breakout",
+                          link1: "breakout/Build/WebGL.json",
+                          link2: "breakout/Build/UnityLoader.js",
+                        },
+                      }}
+                    >
+                      Play
+                    </Link>
                     <a onClick={() => setCount(7)}>Info</a>
                     <a href="/" className="not-active">
                       Video
