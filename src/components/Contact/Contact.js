@@ -1,9 +1,54 @@
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 
-<script src="form.js"></script>;
+const Contact = (props) => {
+  const [mailSent, setmailSent] = useState(false);
+  const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({});
 
-const Contact = () => {
+  /**
+   * @function handleFormSubmit
+   * @param e { obj } - form event
+   * @return void
+   */
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    axios({
+      method: "post",
+      url: `http://localhost:8080/api/contact/index.php`,
+      headers: { "content-type": "application/json" },
+      data: formData,
+    })
+      .then((result) => {
+        if (result.data.sent) {
+          setmailSent(result.data.sent);
+          setError(false);
+        } else {
+          setError(true);
+        }
+      })
+      .catch((error) => setError(error.message));
+  };
+  /**
+   * @function handleChange
+   * @param e { obj } - change event
+   * @param field { string } - namve of the field
+   * @return void
+   */
+  const handleChange = (e, field) => {
+    let value = e.target.value;
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
+  };
+
+  const { successMessage, errorMessage, fieldsConfig } = props.config;
+
   return (
     <div id="contact" className="contact-container">
       <h2>Contact Me</h2>
@@ -11,66 +56,56 @@ const Contact = () => {
       <div className="container">
         <div id="form-main">
           <div id="form-div">
-            <form className="montform" id="reused_form">
-              <p className="name">
-                <input
-                  name="name"
-                  type="text"
-                  className="feedback-input"
-                  required
-                  placeholder="Name"
-                  id="name"
-                />
-              </p>
-              <p className="email">
-                <input
-                  name="email"
-                  type="email"
-                  required
-                  className="feedback-input"
-                  id="email"
-                  placeholder="Email"
-                />
-              </p>
-              <p className="subject">
-                <input
-                  name="subject"
-                  type="text"
-                  required
-                  className="feedback-input"
-                  id="subject"
-                  placeholder="Subject"
-                />
-              </p>
-              <p className="text">
-                <textarea
-                  name="message"
-                  className="feedback-input"
-                  id="comment"
-                  placeholder="Message"
-                ></textarea>
-              </p>
+            <form action="#" className="montform" id="reused_form">
+              {fieldsConfig &&
+                fieldsConfig.map((field) => {
+                  return (
+                    <React.Fragment key={field.id}>
+                      {field.type !== "textarea" ? (
+                        <React.Fragment>
+                          <p className={field.identifier}>
+                            <input
+                              type={field.type}
+                              className={field.className}
+                              placeholder={field.placeholder}
+                              value={field.name}
+                              id={field.identifier}
+                              onChange={(e) => handleChange(e, field.fieldName)}
+                            />
+                          </p>
+                        </React.Fragment>
+                      ) : (
+                        <React.Fragment>
+                          <p className={field.identifier}>
+                            <textarea
+                              className={field.className}
+                              placeholder={field.placeholder}
+                              id={field.identifier}
+                              onChange={(e) => handleChange(e, field.fieldName)}
+                              value={field.name}
+                            />
+                          </p>
+                        </React.Fragment>
+                      )}
+                    </React.Fragment>
+                  );
+                })}
               <div className="submit">
-                <button type="submit" className="button-blue">
+                <button
+                  type="submit"
+                  className="button-blue"
+                  onClick={(e) => handleFormSubmit(e)}
+                >
                   Submit
                 </button>
                 <div className="ease"></div>
               </div>
+              <div>
+                <br />
+                {mailSent && <div className="success">{successMessage}</div>}
+                {error && <div className="error">{errorMessage}</div>}
+              </div>
             </form>
-            {/* <div
-              id="error_message"
-              // style="width:100%; height:100%; display:none;"
-            >
-              <h4>Error</h4>
-              Sorry there was an error sending your form.
-            </div>
-            <div
-              id="success_message"
-              // style="width:100%; height:100%; display:none; "
-            >
-              {" "}
-              <h2>Success! Your Message was Sent Successfully.</h2>{" "}
-            </div> */}
           </div>
         </div>
       </div>
@@ -80,3 +115,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+FormData.propTypes = {
+  config: PropTypes.object.isRequired,
+};

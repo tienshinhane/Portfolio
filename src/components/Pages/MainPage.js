@@ -4,6 +4,12 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 
+import { config as configuration } from "../Contact/Form/Config.js";
+
+import React from "react";
+
+import "../Contact/Contact.css";
+
 const MainPage = () => {
   return (
     <>
@@ -11,7 +17,7 @@ const MainPage = () => {
       <Home />
       <About />
       <Projects />
-      <Contact />
+      <Contact config={configuration} />
     </>
   );
 };

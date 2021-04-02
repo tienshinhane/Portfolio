@@ -20,7 +20,7 @@ const GamePage = (props) => {
         </div>
         <div className="button-container">
           <button onClick={() => history.goBack()} className="play-link-game">
-            Back
+            ← Back
           </button>
         </div>
       </div>

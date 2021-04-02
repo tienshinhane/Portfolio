@@ -15,6 +15,7 @@
   font-weight: bold;
   padding-bottom: 1rem;
   background-color: rgba(119, 119, 119, 0.123);
+  box-shadow: 2px 3px 3px #303030;
 }
 
 /* FORM */
@@ -41,11 +42,10 @@
   padding-top: 35px;
   padding-bottom: 50px;
   width: 450px;
-  /* float: left; */
   position: absolute;
   margin-top: 30px;
-  /* margin-left: 260px; */
   border-radius: 7px;
+  box-shadow: 2px 3px 3px #303030;
 }
 
 .montform .feedback-input {
@@ -61,6 +61,8 @@
   width: 100%;
   box-sizing: border-box;
   border: 3px solid rgba(0, 0, 0, 0);
+  box-shadow: 2px 3px 3px #303030;
+  border-radius: 3px;
 }
 /*Inputs styles*/
 .montform .feedback-input:focus {
@@ -143,6 +145,8 @@
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700;
+  box-shadow: 2px 3px 3px #303030;
+  border-radius: 5px;
 }
 
 .button-blue:hover {
