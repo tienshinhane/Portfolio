@@ -7,6 +7,7 @@ import React, { useState } from "react";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="Header">
       <img src={logo} className="Logo" alt="logo"></img>
@@ -14,15 +15,14 @@ const Header = () => {
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded={isOpen}
         aria-label="Toggle navigation"
       >
         <Hamburger color="whitesmoke" toggled={isOpen} toggle={setOpen} />
       </button>
-
-      <nav className="Nav" id="navbarSupportedContent">
+      <nav className="Nav collapse navbar-collapse" id="navbarNav">
         <Link
           smooth={true}
           activeClass="active"
