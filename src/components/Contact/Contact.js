@@ -4,6 +4,7 @@ import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
+require("dotenv").config();
 
 const Contact = (props) => {
   const [mailSent, setmailSent] = useState(false);
@@ -19,7 +20,8 @@ const Contact = (props) => {
     e.preventDefault();
     axios({
       method: "post",
-      url: `http://localhost:8080/api/contact/index.php`,
+      url: `http://localhost/api/contact/index.php`,
+      // url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
       data: formData,
     })
@@ -36,7 +38,7 @@ const Contact = (props) => {
   /**
    * @function handleChange
    * @param e { obj } - change event
-   * @param field { string } - namve of the field
+   * @param field { string } - name of the field
    * @return void
    */
   const handleChange = (e, field) => {

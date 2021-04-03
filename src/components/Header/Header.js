@@ -2,12 +2,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
+import Hamburger from "hamburger-react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="Header">
       <img src={logo} className="Logo" alt="logo"></img>
-      <nav className="Nav">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded={isOpen}
+        aria-label="Toggle navigation"
+      >
+        <Hamburger color="whitesmoke" toggled={isOpen} toggle={setOpen} />
+      </button>
+
+      <nav className="Nav" id="navbarSupportedContent">
         <Link
           smooth={true}
           activeClass="active"
