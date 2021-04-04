@@ -55,6 +55,12 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+  .Websites-container {
+    min-width: 700px;
+  }
+}
+
 .music .entry-title {
   background-image: url(../../assets/images/projectheaders/edgespearmusic.png);
   background-size: cover;
@@ -293,19 +299,25 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 /*-------Popup Box-------*/
 .portfolio-image-popupbox {
   max-width: 100%;
-  height: auto;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
 }
 
 .info-text {
   margin-top: 10px;
   max-height: 250px;
-  max-width: 100%;
+  max-width: 90%;
   font-size: large;
   overflow: auto;
+  margin: auto;
 }
 
 .info-text > h3 {
   text-align: center;
   text-decoration: underline;
+}
+.info-text > p {
+  text-align: center;
 }

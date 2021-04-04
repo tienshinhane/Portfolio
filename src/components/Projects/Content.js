@@ -18,8 +18,10 @@ export const openPopupboxMusicInfo = () => {
       <img
         className="portfolio-image-popupbox"
         src={edgespearmusicbanner}
-        alt="edge spear music Banner"
+        alt="edge spear music B
+        anner"
       />
+
       <div className="info-text">
         <h3>edgespearMusic.com</h3>
         <p>

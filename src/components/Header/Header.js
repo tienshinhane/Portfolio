@@ -9,20 +9,8 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="Header">
-      <img src={logo} className="Logo" alt="logo"></img>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded={isOpen}
-        aria-label="Toggle navigation"
-      >
-        <Hamburger color="whitesmoke" toggled={isOpen} toggle={setOpen} />
-      </button>
-      <nav className="Nav collapse navbar-collapse" id="navbarNav">
+    <div className="container-fluid">
+      <div className="Header">
         <Link
           smooth={true}
           activeClass="active"
@@ -31,39 +19,62 @@ const Header = () => {
           offset={-70}
           href="#"
         >
-          Home
+          <img src={logo} className="Logo" alt="logo"></img>
         </Link>
-        <Link
-          smooth={true}
-          activeClass="active"
-          spy={true}
-          to="about"
-          offset={-70}
-          href="#"
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          About Me
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          to="projects"
-          offset={-70}
-          href="#"
-        >
-          Projects
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          to="contact"
-          offset={-70}
-          href="#"
-        >
-          Contact Me
-        </Link>
-      </nav>
+          <Hamburger color="whitesmoke" toggled={isOpen} toggle={setOpen} />
+        </button>
+        <nav className="collapse navbar-collapse" id="navbarSupportedContent">
+          <Link
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            to="home"
+            offset={-70}
+            href="#"
+          >
+            Home
+          </Link>
+          <Link
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            to="about"
+            offset={-70}
+            href="#"
+          >
+            About Me
+          </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            to="projects"
+            offset={-70}
+            href="#"
+          >
+            Projects
+          </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            to="contact"
+            offset={-70}
+            href="#"
+          >
+            Contact Me
+          </Link>
+        </nav>
+      </div>
     </div>
   );
 };
