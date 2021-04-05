@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="container-fluid">
+    <div className="navbar navbar-expand-lg">
       <div className="Header">
         <Link
           smooth={true}
@@ -24,15 +24,15 @@ const Header = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <Hamburger color="whitesmoke" toggled={isOpen} toggle={setOpen} />
         </button>
-        <nav className="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav className="Nav collapse navbar-collapse" id="navbarNav">
           <Link
             smooth={true}
             activeClass="active"
