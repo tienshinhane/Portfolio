@@ -152,9 +152,9 @@ const Projects = () => {
           </div>
           {/* {<!-- end of Portfolio project tab-->} */}
         </div>
-        <div id="divider-container">
-          <div className="divider-dot-darkbg"></div>
-        </div>
+
+        <div className="divider-dot-darkbg"></div>
+
         <div className="Games-container">
           <h2>Games</h2>
           <div className="Horizontal"></div>
@@ -425,9 +425,9 @@ const Projects = () => {
             {/* <!--end of Breakout project tab-- > */}
           </div>
         </div>
-        <div id="divider-container">
-          <div className="divider-dot-darkbg"></div>
-        </div>
+
+        <div className="divider-dot-darkbg"></div>
+
         <div className="Apps-container">
           <h2>Apps</h2>
           <div className="Horizontal"></div>
@@ -473,9 +473,8 @@ const Projects = () => {
             {/* {<!-- end of Dog project tab-->} */}
           </div>
         </div>
-        <div id="divider-container">
-          <div className="divider-dot-darkbg"></div>
-        </div>
+
+        <div className="divider-dot-darkbg"></div>
       </div>
       <PopupboxContainer />
     </div>

@@ -5,7 +5,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   color: 282c34;
   font-size: 100%;
@@ -17,11 +17,8 @@
   width: 2px;
   position: relative;
   border: 0;
-  flex-grow: 2;
-  height: 100%;
+  height: auto;
   background: #ffffff;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .split {
@@ -57,12 +54,13 @@ ul {
 
 .centered {
   position: relative;
-  height: 100vh;
   padding-left: 5px;
   padding-right: 5px;
   text-align: center;
   overflow-y: hidden;
-
+  margin: auto;
+  width: 90%;
+  font-size: 3vh;
   /* border: 1px solid red; */
 }
 
