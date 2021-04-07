@@ -8,6 +8,8 @@
 
 #divider-container {
   max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   height: auto;
   border: 1px solid rgba(0, 128, 0, 0);
 }
