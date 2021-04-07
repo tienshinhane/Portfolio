@@ -8,7 +8,9 @@ const About = () => {
         <div className="title">
           <h2>About Me</h2>
         </div>
-        <div className="divider-lightbg"></div>
+        <div id="divider-container">
+          <div className="divider-lightbg"></div>
+        </div>
         <div className="centered">
           <h4>
             I'm a UK-based programmer who enjoys spending as much time making
@@ -32,7 +34,9 @@ const About = () => {
         <div className="title">
           <h2>Skills</h2>
         </div>
-        <div className="divider-lightbg"></div>
+        <div id="divider-container">
+          <div className="divider-lightbg"></div>
+        </div>
         <div className="centered">
           <h4>
             Studying with the Open University alongside my own personal projects

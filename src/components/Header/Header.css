@@ -21,9 +21,6 @@
   padding-left: 2rem;
 }
 
-.Nav {
-}
-
 .Nav a {
   color: #fff;
   font-size: 20px;
@@ -80,28 +77,22 @@
   .Header {
     grid-template-areas: "logo burger" "nav nav";
   }
-  .Nav {
-    /* grid-template-rows: repeat(4, auto);
-    grid-template-columns: none;
-    grid-row-gap: 20px;
-
-    padding: 30px 0 30px;
-    background: rgba(40, 44, 47, 1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-  }
   #navbarNav {
     margin-top: 70px !important;
+    display: grid !important;
+    /* grid-area: nav !important; */
+    flex-direction: column !important;
     grid-template-rows: repeat(4, auto) !important;
     grid-template-columns: none !important;
     grid-row-gap: 20px !important;
-
-    padding: 30px 0 30px !important;
+    padding: 10px 30px 30px !important;
     background: rgba(40, 44, 47, 1) !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+  }
+  #navbarNav.collapse:not(.show) {
+    display: none !important;
   }
 }
 

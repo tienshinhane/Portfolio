@@ -58,7 +58,10 @@ const Projects = () => {
   return (
     <div id="projects" className="Projects-container">
       <h2>Projects</h2>
-      <div className="divider-darkbg"></div>
+      <div id="divider-container">
+        <div className="divider-darkbg"></div>
+      </div>
+
       <div className="Projects-main">
         <div className="Websites-container">
           <h2>Websites</h2>
@@ -149,7 +152,9 @@ const Projects = () => {
           </div>
           {/* {<!-- end of Portfolio project tab-->} */}
         </div>
-        <div className="divider-dot-darkbg"></div>
+        <div id="divider-container">
+          <div className="divider-dot-darkbg"></div>
+        </div>
         <div className="Games-container">
           <h2>Games</h2>
           <div className="Horizontal"></div>
@@ -420,7 +425,9 @@ const Projects = () => {
             {/* <!--end of Breakout project tab-- > */}
           </div>
         </div>
-        <div className="divider-dot-darkbg"></div>
+        <div id="divider-container">
+          <div className="divider-dot-darkbg"></div>
+        </div>
         <div className="Apps-container">
           <h2>Apps</h2>
           <div className="Horizontal"></div>
@@ -466,7 +473,9 @@ const Projects = () => {
             {/* {<!-- end of Dog project tab-->} */}
           </div>
         </div>
-        <div className="divider-dot-darkbg"></div>
+        <div id="divider-container">
+          <div className="divider-dot-darkbg"></div>
+        </div>
       </div>
       <PopupboxContainer />
     </div>
