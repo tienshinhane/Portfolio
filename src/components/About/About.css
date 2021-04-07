@@ -14,11 +14,11 @@
 
 .Vertical {
   box-shadow: 0 0 8px 6px rgba(173, 173, 173, 0.16);
-  width: 2px;
+  width: 4px;
   position: relative;
   border: 0;
   height: auto;
-  background: #ffffff;
+  background: #ffffff73;
 }
 
 .split {
@@ -41,11 +41,11 @@ ul {
 
 .title {
   top: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
   text-align: center;
   color: #5e2e8b;
   background-color: rgba(0, 0, 0, 0.123);
+  height: 60px;
 }
 
 .title > h2 {
