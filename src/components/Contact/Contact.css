@@ -1,7 +1,9 @@
 .contact-container {
   background-image: url(/src/assets/contactbg.png);
-  height: 93vh;
+  height: auto;
   padding-top: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-container > h2 {
@@ -181,11 +183,6 @@
 
 @media only screen and (max-width: 580px) {
   #form-div {
-    left: 3%;
-    margin-right: 3%;
     width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
   }
 }
