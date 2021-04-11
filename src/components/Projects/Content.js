@@ -6,6 +6,7 @@ import bumperballbanner from "../../assets/images/projectheaders/bumperball.png"
 import blackjackbanner from "../../assets/images/projectheaders/blackjack.png";
 import burgergamebanner from "../../assets/images/projectheaders/bugergame.png";
 import breakoutbanner from "../../assets/images/projectheaders/breakout.png";
+import k9banner from "../../assets/images/projectheaders/dogproject.png";
 
 // React Popup Box
 import { PopupboxManager } from "react-popupbox";
@@ -25,9 +26,25 @@ export const openPopupboxMusicInfo = () => {
       <div className="info-text">
         <h3>edgespearMusic.com</h3>
         <p>
-          edgespearMusic.com was created as a way to showcase my music projects
-          to potential clients, much in the same way that this website is
-          intended to showcase some of my programming projects.
+          <a href="http://edgespearmusic.com" target="_blank" rel="noreferrer">
+            edgespearMusic.com
+          </a>{" "}
+          was created as a way to showcase my music projects to potential
+          clients, much in the same way that this website is intended to
+          showcase some of my programming projects.
+        </p>
+
+        <p>
+          It was created by myself and a friend who turned me onto the Angular
+          framework and served as an excellent starting point for me to begin
+          learning how to build modern, responsive, component-based websites. I
+          continue to explore what Angular has to offer, as is shown by this
+          website you are currently visiting.
+        </p>
+
+        <p>
+          The source code is unavailable due to privacy regarding my
+          professional published projects and my clients' projects.
         </p>
       </div>
     </>
@@ -43,10 +60,6 @@ export const openPopupboxMusicInfo = () => {
       fadeInSpeed: 500,
     },
   });
-
-  PopupboxManager.config.onCleanUp = () => {
-    console.log("closing");
-  };
 };
 
 export const openPopupboxPortfolioInfo = () => {
@@ -59,7 +72,43 @@ export const openPopupboxPortfolioInfo = () => {
       />
       <div className="info-text">
         <h3>edgespearProjects.com</h3>
-        <p></p>
+        <p>
+          I created edgespearProjects.com for two main purposes: To showcase my
+          programming skills through projects I've worked on, and to give me
+          experience with the React framework. The site is fully responsive and
+          utilises JSX, CSS and PHP.
+        </p>
+        <h3>
+          <strong>About The Build</strong>
+        </h3>
+        <p>
+          Being the first single-page app I'd created using the React front-end
+          framework, I had a lot of learning to do, but having built my music
+          portfolio webpage using Angular, the learning curve was much less
+          steep.
+        </p>
+        <p>
+          The build itself is fairly straightforward: A single App containing a
+          route to the full page component and another route to the Unity
+          component page which opens a selected game in a WebGL player.
+        </p>
+        <p>
+          Tools and functionality used include React-Scroll for smooth
+          navigation between components, React-Unity-Webgl to enable interaction
+          with my Unity games through the browser, React-Popupbox to enable
+          popupboxes like the one in which you are viewing this information and
+          PHP for the interactivity of the contact form.
+        </p>
+        <h3>
+          <strong>My Thoughts</strong>
+        </h3>
+        <p>
+          Now that the page is built, I've grown to enjoy using React due to
+          it's highly modular and easy-to-get-started nature. Granted, there are
+          an awful lot of additional packages out there which are poorly
+          documented and hard to use, but equally, the ones that work, work very
+          well, and allow for very quick and effective results.
+        </p>
       </div>
     </>
   );
@@ -127,12 +176,17 @@ export const openPopupboxAndroidInfo = () => {
 
         <p>
           The drawing system is the most complex part of the game so far, using
-          an idea and code snippet from
-          <a href="http://theflyingkeyboard.net/unity/unity-2d-c-drawing-lines-with-mouse/">
+          an idea and code snippet from&nbsp;
+          <a
+            href="http://theflyingkeyboard.net/unity/unity-2d-c-drawing-lines-with-mouse/"
+            target="_blank"
+            rel="noreferrer"
+          >
             theflyingkeyboard
           </a>
-          to have different line objects connected together and coloured either
-          red or green depending on whether or not they're within a boundary
+          &nbsp;to have different line objects connected together and coloured
+          either red or green depending on whether or not they're within a
+          boundary
         </p>
       </div>
     </>
@@ -366,12 +420,43 @@ export const openPopupboxDogInfo = () => {
     <>
       <img
         className="portfolio-image-popupbox"
-        src={breakoutbanner}
-        alt="Breakout Banner"
+        src={k9banner}
+        alt="Canine Havok Daycare Banner"
       />
       <div className="info-text">
         <h3>K-9 Havok Daycare App</h3>
-        <p></p>
+        <p>
+          I am currently building a multi-platform app for a client's business
+          which is in the process of being set up.
+        </p>
+        <p>
+          The app is designed to allow potential customers to sign up, log in,
+          and book a slot for their dog to be looked after during the day.
+        </p>
+        <h3>
+          <strong>
+            <u>About The Build</u>
+          </strong>
+        </h3>
+        <p>
+          The product is still in early development but I am using Angular and
+          Ionic to create a cross-platform mobile app that will be of two parts:
+          a customer version which can be downloaded from the app store and used
+          to create accounts, log in and request bookings; and a management
+          version which will be used by my client to approve or decline
+          bookings.
+        </p>
+        <p>
+          So far, the customer version is a working demo in which requests can
+          be made to an api in order to create a new user in a MySQL database
+          and log them in by validating credentials. The booking side of the app
+          is next to be developed.
+        </p>
+        <p>The management version is yet to be prototyped.</p>
+        <p>
+          I am using Adobe XD to design the layouts of the screens which will be
+          approved by my client before development of said page will begin.
+        </p>
       </div>
     </>
   );

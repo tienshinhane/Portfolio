@@ -17,13 +17,20 @@ const About = () => {
             things work as look good.
             <br></br>
             <br></br>I studied with the Open University for a BSc in Computing
-            and IT, specialising in Software and Solutions.<br></br> The OU gave
-            me my first taste of proper programming with Java and since then,
-            I've continued to expand my horizons to gaming and the web.
+            and IT, specialising in Software and Solutions, achieving a 2:1
+            result.
             <br></br>
-            <br></br>Currently employed in retail, I make games, websites and
-            apps for my own pleasure, but I am putting every effort I can into
-            making a career of it.
+            <br></br>
+            As a teenager I fruitlessly fumbled my way around Game Maker trying
+            to emulate the popular games I loved to play but the OU gave me my
+            first taste of proper programming with Java and since then, I've
+            continued to expand my horizons in programming for gaming and the
+            web.
+            <br></br>
+            <br></br>Currently employed in retail, I spend my spare time pushing
+            myself to be better than I was the day before and improve my skills
+            in the things I love to do. I am now putting every effort I can into
+            making a career of programming in order to do fulfill my vocation.
           </h4>
           <br></br>
           <h3>TL;DR: I love to learn. I live to learn.</h3>
@@ -54,6 +61,7 @@ const About = () => {
               <li>Angular 7+</li>
               <li>Ionic</li>
               <li>Adobe Photoshop, XD</li>
+              <li>Git</li>
               <li>Unity</li>
               <li>Blender</li>
             </ul>

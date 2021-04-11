@@ -102,7 +102,9 @@ const Projects = () => {
                     >
                       Visit
                     </a>
-                    <a onClick={() => setCount(1)}>Info</a>
+                    <a className="info" onClick={() => setCount(1)}>
+                      Info
+                    </a>
                   </div>
                 </div>
               </div>
@@ -121,7 +123,7 @@ const Projects = () => {
                       <strong>Framework: </strong>React
                     </li>
                     <li>
-                      <strong>Languages: </strong>JSX, CSS, JS
+                      <strong>Languages: </strong>JSX, CSS, PHP
                     </li>
                     <li>
                       <strong>Platforms: </strong>Web
@@ -144,7 +146,9 @@ const Projects = () => {
                     >
                       You're Here!
                     </a>
-                    <a onClick={() => setCount(2)}>Info</a>
+                    <a className="info" onClick={() => setCount(2)}>
+                      Info
+                    </a>
                   </div>
                 </div>
               </div>
@@ -200,7 +204,9 @@ const Projects = () => {
                     >
                       Play
                     </Link>
-                    <a onClick={() => setCount(3)}>Info</a>
+                    <a className="info" onClick={() => setCount(3)}>
+                      Info
+                    </a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -240,7 +246,9 @@ const Projects = () => {
                     <a href="/" className="not-active">
                       Play
                     </a>
-                    <a onClick={() => setCount(4)}>Info</a>
+                    <a className="info" onClick={() => setCount(4)}>
+                      Info
+                    </a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -298,7 +306,9 @@ const Projects = () => {
                     >
                       Play
                     </Link>
-                    <a onClick={() => setCount(5)}>Info</a>
+                    <a className="info" onClick={() => setCount(5)}>
+                      Info
+                    </a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -356,7 +366,9 @@ const Projects = () => {
                     >
                       Play
                     </Link>
-                    <a onClick={() => setCount(6)}>Info</a>
+                    <a className="info" onClick={() => setCount(6)}>
+                      Info
+                    </a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -414,7 +426,9 @@ const Projects = () => {
                     >
                       Play
                     </Link>
-                    <a onClick={() => setCount(7)}>Info</a>
+                    <a className="info" onClick={() => setCount(7)}>
+                      Info
+                    </a>
                     <a href="/" className="not-active">
                       Video
                     </a>
@@ -465,7 +479,9 @@ const Projects = () => {
                     </a>
                   </div>
                   <div className="btn">
-                    <a onClick={() => setCount(8)}>Info</a>
+                    <a className="info" onClick={() => setCount(8)}>
+                      Info
+                    </a>
                   </div>
                 </div>
               </div>

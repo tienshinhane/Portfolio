@@ -8,7 +8,7 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
   background-image: url(/src/assets/projectbg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 93vh;
   padding-top: 1.5rem;
 }
 
@@ -308,16 +308,40 @@ Source modified from #14 http://blog.dynamicdrive.com/free-comparison-and-pricin
 .info-text {
   margin-top: 10px;
   max-height: 250px;
-  max-width: 90%;
-  font-size: large;
-  overflow: auto;
+  max-width: 100%;
+  font-size: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-x: hidden;
   margin: auto;
 }
 
 .info-text > h3 {
   text-align: center;
   text-decoration: underline;
+  /* font-size: 120%; */
+  font-size: 120%;
 }
 .info-text > p {
   text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

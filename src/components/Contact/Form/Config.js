@@ -7,11 +7,11 @@
  * fields: this is the name of each field. This should be exact order of the fieldsConfig and fieldsConfig.fieldName should be  the same
  * fieldsConfig = settings for each input/textarea field
  */
-require("dotenv").config();
 
 export const config = {
-  // api: `${process.env.REACT_APP_API}`,
-  api: `http://localhost/api/contact/index.php`,
+  api: `${process.env.REACT_APP_API}`,
+
+  //api: `http://edgespearprojects.com/api/contact/index.php`,
   successMessage: "Thank you for your message, I will be in touch soon.",
   errorMessage: "There was an error.",
   fields: {
@@ -47,7 +47,7 @@ export const config = {
       fieldName: "subject",
       type: "subject",
       placeholder: "Subject",
-      isRequired: true,
+      isRequired: false,
       className: "feedback-input",
       identifier: "subject",
     },

@@ -4,7 +4,6 @@ import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
-require("dotenv").config();
 
 const Contact = (props) => {
   const [mailSent, setmailSent] = useState(false);
@@ -20,8 +19,8 @@ const Contact = (props) => {
     e.preventDefault();
     axios({
       method: "post",
-      url: `http://localhost/api/contact/index.php`,
-      // url: `${process.env.REACT_APP_API}`,
+      //url: `http://edgespearprojects.com/api/contact/index.php`,
+      url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
       data: formData,
     })

@@ -9,7 +9,8 @@
   justify-content: center;
   color: 282c34;
   font-size: 100%;
-  padding-top: 10px;
+  padding-top: 15px;
+  min-height: 93vh;
 }
 
 .Vertical {
@@ -25,6 +26,7 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+  width: 50%;
 }
 
 .left {
@@ -41,15 +43,24 @@ ul {
 
 .title {
   top: 0;
-  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
   text-align: center;
   color: #5e2e8b;
   background-color: rgba(0, 0, 0, 0.123);
-  height: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
 }
 
 .title > h2 {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 359px) {
+  .title > h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .centered {
@@ -61,14 +72,18 @@ ul {
   margin: auto;
   width: 90%;
   font-size: 3vh;
-  /* border: 1px solid red; */
 }
 
 .centered > h3 {
+  font-size: 3vh;
   margin-bottom: 2rem;
 }
 .centered > h4 {
   font-size: 90%;
+}
+
+.languages {
+  margin-top: 30px;
 }
 
 .languages > ul > li {

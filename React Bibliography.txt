@@ -9,7 +9,9 @@ https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolli
 ----------------------------------------------
 PHP SENDMAIL
 https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
-
+------------------------------------------------
+RUN REACT APP ON APACHE
+https://www.youtube.com/watch?v=vpBJnXkQZiw
 
 
 
