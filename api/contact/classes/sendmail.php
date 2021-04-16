@@ -63,16 +63,22 @@ class Sender
     }
 
     public function send() {
-        $to = $this->sendTo;
-        $from = $this->sendFrom;
-        $subject = $this->subject;
-        $message = $this->message;
-        //$headers = $this->headers;
-        $headers = 'From: '.$this->getFrom() . "\r\n" .
-            'Reply-To: '.$this->getFrom() . "\r\n" .
+        // $to = $this->sendTo;
+        // $from = $this->sendFrom;
+        // $subject = $this->subject;
+        // $message = $this->message;
+        // $headers = $this->setHeader();
+
+        $to      = 'edgespearprojects@gmail.com';
+        $subject = 'the subject';
+        $message = 'hello';
+        $headers = 'From: webmaster@example.com' . "\r\n" .
+            'Reply-To: webmaster@example.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
         mail($to, $subject, $message, $headers);
+
+        // mail($to, $subject, $message, $headers);
         echo json_encode(array("sent" => true));
     }
 }

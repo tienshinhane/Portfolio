@@ -10,11 +10,27 @@ https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolli
 PHP SENDMAIL
 https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
 ------------------------------------------------
+PHPMAILER WITH REACT TUTORIAL
+https://www.youtube.com/watch?v=bo6sx5KUC6U&t=750s
+https://github.com/ruvictor/send-email-with-react/blob/master/api.ruvictor.com/index.php
+------------------------------------------------
 RUN REACT APP ON APACHE
 https://www.youtube.com/watch?v=vpBJnXkQZiw
+-------------------------------------------------
+THE ORIGINAL PHP SENDMAIL SETUP
+https://github.com/malithmcr/react-php-contact-form
+-------------------------------------------------
+CONFIGURING SENDMAIL ON LINUX
+https://tecadmin.net/sendmail-to-relay-emails-through-gmail-stmp/
 
-
-
+AuthInfo: "U:root" "I:edgespearprojects@gmail.com" "P:Jfer1503"
+-------------------------------------------------
+SLOW SMTP
+https://developernote.com/2012/07/how-i-configured-sendmail-for-php-on-ubuntu-server-12-04/
+-----------
+PHPMAILER TUT
+https://www.youtube.com/watch?v=YtNraQxUTM0&t=10s
+------------
 
 
 

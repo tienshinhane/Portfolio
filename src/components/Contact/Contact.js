@@ -20,6 +20,7 @@ const Contact = (props) => {
     axios({
       method: "post",
       //url: `http://edgespearprojects.com/api/contact/index.php`,
+      // url: `http://localhost/api/contact/index.php`,
       url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
       data: formData,
