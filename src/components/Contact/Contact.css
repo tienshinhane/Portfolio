@@ -155,12 +155,17 @@
   border-radius: 5px;
 }
 
-.button-blue:hover {
+.button-blue:disabled {
+  background-color: grey;
+  color: whitesmoke;
+}
+
+.button-blue:hover:enabled {
   background-color: rgba(0, 0, 0, 0);
   color: #7e3bbc;
 }
 
-.montform .submit:hover {
+.montform .submit:hover:enabled {
   color: #7e3bbc;
 }
 

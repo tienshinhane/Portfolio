@@ -12,7 +12,7 @@ const Home = () => {
         <p>
           Hi, I'm <span style={nameColor}>Jonathan.</span>
         </p>
-        <p>Passionate Programmer of Games, Websites and Apps.</p>
+        <p>Dedicated Developer of Games, Websites and Apps.</p>
         <p>Based in England, UK.</p>
       </header>
     </div>

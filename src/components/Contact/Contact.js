@@ -7,8 +7,10 @@ import "./Contact.css";
 
 const Contact = (props) => {
   const [mailSent, setmailSent] = useState(false);
+  const [disabledButton, setDisabled] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({});
+  const [text, setText] = useState("Submit");
 
   /**
    * @function handleFormSubmit
@@ -17,9 +19,10 @@ const Contact = (props) => {
    */
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    setDisabled(true);
+    setText("Sending...");
     axios({
       method: "post",
-      //url: `http://edgespearprojects.com/api/contact/index.php`,
       // url: `http://localhost/api/contact/index.php`,
       url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
@@ -29,8 +32,12 @@ const Contact = (props) => {
         if (result.data.sent) {
           setmailSent(result.data.sent);
           setError(false);
+          setDisabled(true);
+          setText("Success!");
         } else {
           setError(true);
+          setDisabled(false);
+          setText("Submit");
         }
       })
       .catch((error) => setError(error.message));
@@ -94,11 +101,12 @@ const Contact = (props) => {
                 })}
               <div className="submit">
                 <button
+                  disabled={disabledButton}
                   type="submit"
                   className="button-blue"
                   onClick={(e) => handleFormSubmit(e)}
                 >
-                  Submit
+                  {text}
                 </button>
                 <div className="ease"></div>
               </div>

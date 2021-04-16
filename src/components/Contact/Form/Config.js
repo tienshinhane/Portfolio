@@ -11,7 +11,6 @@
 export const config = {
   api: `${process.env.REACT_APP_API}`,
   // api: `http://localhost/api/contact/index.php`,
-  //api: `http://edgespearprojects.com/api/contact/index.php`,
   successMessage: "Thank you for your message, I will be in touch soon.",
   errorMessage: "There was an error. Please ensure you filled in all fields.",
   fields: {
