@@ -21,11 +21,11 @@ const About = () => {
             result.
             <br></br>
             <br></br>
-            As a teenager I fruitlessly fumbled my way around Game Maker trying
-            to emulate the popular games I loved to play but the OU gave me my
-            first taste of proper programming with Java and since then, I've
-            continued to expand my horizons in programming for gaming and the
-            web.
+            As a teenager, I fruitlessly fumbled my way around Game Maker trying
+            to emulate the popular games I loved to play, but the OU gave me my
+            first taste of proper programming with Java. Since then, I've
+            continued to expand my skills for gaming and the web; Desktop and
+            Android.
             <br></br>
             <br></br>Currently employed in retail, I spend my spare time pushing
             myself to be better than I was the day before and improve my skills
@@ -33,7 +33,7 @@ const About = () => {
             making a career of programming in order to do fulfill my vocation.
           </h4>
           <br></br>
-          <h3>TL;DR: I love to learn. I live to learn.</h3>
+          <h3>TL;DR: I love to learn, I live to learn.</h3>
         </div>
       </div>
       <div className="Vertical"></div>
