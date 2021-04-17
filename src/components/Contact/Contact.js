@@ -23,7 +23,6 @@ const Contact = (props) => {
     setText("Sending...");
     axios({
       method: "post",
-      // url: `http://localhost/api/contact/index.php`,
       url: `${process.env.REACT_APP_API}`,
       headers: { "content-type": "application/json" },
       data: formData,
@@ -63,6 +62,12 @@ const Contact = (props) => {
       <h2>Contact Me</h2>
       <div className="divider-lightbg"></div>
       <div className="container">
+        <div className="alternative">
+          Alternatively, email me at:
+          <a href="mailto:edgespearprojects@gmail.com">
+            &nbsp; edgespearprojects@gmail.com
+          </a>
+        </div>
         <div id="form-main">
           <div id="form-div">
             <form action="#" className="montform" id="reused_form">
@@ -112,6 +117,7 @@ const Contact = (props) => {
               </div>
               <div>
                 <br />
+
                 {mailSent && <div className="success">{successMessage}</div>}
                 {error && <div className="error">{errorMessage}</div>}
               </div>
