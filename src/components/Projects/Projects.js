@@ -132,7 +132,16 @@ const Projects = () => {
                       <strong>Status: </strong>Live
                     </li>
                     <li>
-                      <strong>Source Files: </strong>TBC
+                      <strong>
+                        Source Files:{" "}
+                        <a
+                          href="https://github.com/tienshinhane/Portfolio.git"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <u>GitHub</u>
+                        </a>
+                      </strong>
                     </li>
                   </ul>
                 </div>
