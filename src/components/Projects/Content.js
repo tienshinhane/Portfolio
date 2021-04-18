@@ -8,6 +8,12 @@ import burgergamebanner from "../../assets/images/projectheaders/bugergame.png";
 import breakoutbanner from "../../assets/images/projectheaders/breakout.png";
 import k9banner from "../../assets/images/projectheaders/dogproject.png";
 
+import homepage from "../../assets/images/project-images/homepage.png";
+import about from "../../assets/images/project-images/about.png";
+import projects from "../../assets/images/project-images/projects.png";
+import contact from "../../assets/images/project-images/contact.png";
+import k9design from "../../assets/images/project-images/dogproject-adobexd.png";
+
 // React Popup Box
 import { PopupboxManager } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
@@ -109,6 +115,30 @@ export const openPopupboxPortfolioInfo = () => {
           documented and hard to use, but equally, the ones that work, work very
           well, and allow for very quick and effective results.
         </p>
+        <p>
+          Below are some Adobe XD Artboards I made as a reference when creating
+          this site:
+        </p>
+        <img
+          className="portfolio-image-embedded"
+          src={homepage}
+          alt="Adobe XD Design of Homepage component"
+        />
+        <img
+          className="portfolio-image-embedded"
+          src={about}
+          alt="Adobe XD Design of About component"
+        />
+        <img
+          className="portfolio-image-embedded"
+          src={projects}
+          alt="Adobe XD Design of Projects component"
+        />
+        <img
+          className="portfolio-image-embedded"
+          src={contact}
+          alt="Adobe XD Design of Contact component"
+        />
       </div>
     </>
   );
@@ -456,7 +486,14 @@ export const openPopupboxDogInfo = () => {
         <p>
           I am using Adobe XD to design the layouts of the screens which will be
           approved by my client before development of said page will begin.
+          Below is an example of one of the designs for a user's personalised
+          home-screen:
         </p>
+        <img
+          className="portfolio-image-embedded"
+          src={k9design}
+          alt="Adobe XD Design of user home screen"
+        />
       </div>
     </>
   );
